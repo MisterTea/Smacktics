@@ -1,24 +1,15 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=3 uid="uid://ckw4hkugl3xjb"]
 
-[ext_resource path="res://BlenderImport/Terrain_Cube002.mesh" type="ArrayMesh" id=1]
-[ext_resource path="res://BlenderImport/Terrain_Cube.mesh" type="ArrayMesh" id=2]
-[ext_resource path="res://BlenderImport/Terrain_Cube001.mesh" type="ArrayMesh" id=3]
-[ext_resource path="res://BlenderImport/Terrain_Cube003.mesh" type="ArrayMesh" id=4]
+[ext_resource type="ArrayMesh" uid="uid://djw8p2ieywbao" path="res://BlenderImport/GrassCube.res" id="1_20176"]
+[ext_resource type="Script" path="res://Terrain/TerrainObject.cs" id="2_rdff0"]
+[ext_resource type="ArrayMesh" uid="uid://c7ikskhwt8j6t" path="res://BlenderImport/WalkableHighlight.res" id="3_6xl8c"]
 
-[node name="Spatial" type="Spatial"]
+[node name="Node3D" type="Node3D"]
 
-[node name="Terrain_Cube001" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
-mesh = ExtResource( 3 )
+[node name="GrassCube" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.27967)
+mesh = ExtResource("1_20176")
+script = ExtResource("2_rdff0")
 
-[node name="Terrain_Cube002" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
-mesh = ExtResource( 1 )
-
-[node name="Terrain_Cube003" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
-mesh = ExtResource( 4 )
-
-[node name="Terrain_Cube" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
-mesh = ExtResource( 2 )
+[node name="WalkableHighlight" type="MeshInstance3D" parent="."]
+mesh = ExtResource("3_6xl8c")

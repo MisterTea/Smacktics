@@ -1,0 +1,31 @@
+{
+  "unitTypes": {
+    "4988d65b-4cbb-434a-97cd-526f1b88497a": {
+      "armor": 0,
+      "health": 2,
+      "movementRange": 7,
+      "jumpHeight": 2,
+      "abilities": ["6e93fd0e-c7c4-4cf6-bcbd-9a86de130422"],
+      "id": "4988d65b-4cbb-434a-97cd-526f1b88497a",
+      "name": "Infantry"
+    }
+  },
+  "abilityTypes": {
+    "6e93fd0e-c7c4-4cf6-bcbd-9a86de130422": {
+      "horizontalRange": 15,
+      "verticalRange": 15,
+      "splashRange": 0,
+      "damage": 1,
+      "id": "6e93fd0e-c7c4-4cf6-bcbd-9a86de130422",
+      "name": "Blaster"
+    }
+  },
+  "blocks": {
+    "4386235c-b99a-4861-b254-f2b072026dde": {
+      "height": 2,
+      "slope": 0,
+      "id": "4386235c-b99a-4861-b254-f2b072026dde",
+      "name": "GrassCube"
+    }
+  }
+}

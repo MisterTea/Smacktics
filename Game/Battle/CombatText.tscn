@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://d6hkfwou0v0g"]
+
+[ext_resource type="Script" path="res://Battle/CombatText.cs" id="1_oom3u"]
+[ext_resource type="Theme" uid="uid://eo8krfhn6uiw" path="res://Themes/Damage.tres" id="2_6due1"]
+
+[node name="CombatText" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_oom3u")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -166.0
+offset_top = -32.0
+offset_right = 166.0
+offset_bottom = 35.0
+theme = ExtResource("2_6due1")
+text = "999!"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Label"]

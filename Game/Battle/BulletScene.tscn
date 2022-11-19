@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://kthd2knmmx0"]
+
+[ext_resource type="PackedScene" uid="uid://dqknitx1gu2ch" path="res://BlenderImport/Bullet.glb" id="1_hinvs"]
+[ext_resource type="Script" path="res://Battle/BulletScene.cs" id="1_x0pgx"]
+[ext_resource type="Environment" uid="uid://cx4pwah7qpii3" path="res://Battle/Environment.tres" id="2_3wa2b"]
+[ext_resource type="CameraAttributesPhysical" uid="uid://xfrgsrnsr5oy" path="res://Battle/CameraAttributes.tres" id="3_82rng"]
+
+[node name="BulletScene" type="Node3D"]
+script = ExtResource("1_x0pgx")
+
+[node name="Bullet" parent="." instance=ExtResource("1_hinvs")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.69861)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.714729, 0.699401, 0, -0.699401, 0.714729, 0, 2.87962, 2.89826)
+visible = false
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("2_3wa2b")
+camera_attributes = ExtResource("3_82rng")

@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://eo8krfhn6uiw"]
+
+[ext_resource type="FontFile" uid="uid://fp61745rohe8" path="res://Fonts/PG_Roof Runners_active_b.ttf" id="1_0el17"]
+
+[resource]
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/constants/outline_size = 10
+Label/font_sizes/font_size = 72
+Label/fonts/font = ExtResource("1_0el17")
